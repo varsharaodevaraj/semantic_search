@@ -28,7 +28,7 @@ if uploaded_file is not None:
         if not results:
             st.warning("No relevant results found for your query.")
         else:
-            st.write("### 🔎 Top Results")
+            st.write("Top Results")
             for i, doc in enumerate(results):
                 st.markdown(f"**Result {i+1}:**")
                 st.write(doc.page_content)
